@@ -293,18 +293,40 @@ img{
 
 .ContainerAnswer{
     margin: 20px;
-
 }
 
 .btn_Test{
-    position: relative;
-    width: max-content;
-    height: max-content;
+    position: flex;
+    width: 30px;
+    height: 30px;
     padding: 2px 8px;
     font-size: 18px;
     grid-column: 2/3;
+    margin: 5px 8px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #000;
+    transition: .3s ease-in-out all;
 }
 
+.btn_Test a{
+    color: #000000;   
+    text-decoration: none;
+}
+
+.btn_Test:hover{
+    background-color: #5ae2c7;    
+    box-shadow: 0px 0px 8px #48cbe2;
+}
+
+
+.answer{
+    display: none;
+}
+
+.answer:checked + .btn_Test{
+    background-color: #5ae2c7;
+}
 
 
 /* Footer */
