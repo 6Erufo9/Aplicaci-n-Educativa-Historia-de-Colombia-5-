@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #BEFFF2;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding: 10px 0px;
+}
+
+.Tittle{
+    font-size: 30px;
+    background-color: #a9e0d5;
+    width: max-content;
+    height: auto;
+    margin: auto;
+    padding: 0px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn{
+    display: inline-flex;
+    width: max-content;
+    height: max-content;
+    margin: 30px 0px;
+    background: #bce5dd;
+    border: 1px solid black;
+    font-size: 20px;
+    box-shadow: 0px 6px 7px #353535b2;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3 ease all;
+    position: relative;        
+    overflow: hidden;
+}
+
+.btn a{
+    position: relative;
+    z-index: 2;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #000;
+    background: none;
+}
+
+/* Header */
+
+.HeaderContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.ButtonContainer{
+    grid-column: 1 / 2;
+    text-align: right;
+    align-content: center;
+}
+
+.btn_back{    
+    margin: 20px;
+}
+
+.btn_back a{
+    padding: 4px 7px;
+}
+
+.btn_back:hover{
+    box-shadow: 0px 3px 8px #000000;
+}
+
+.HeaderContent.Tittle{
+    grid-column: 2 / 4;
+}
+
+/* General */
+
+.ContainerInfo{
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+}
+
+.Info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+p{
+    display: flex;
+    font-size: 18px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #424242;
+    box-shadow: 0px 0px 4px #000000;
+    overflow: hidden;
+    margin: auto;   
+}
+
+/* Sección 1 - LA NUEVA GRANADA */
+
+.GranadaText{
+    padding: 5px;
+    margin: 5px;
+    width: max-content;
+    height: auto;
+}
+
+.GranadaText.One{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    grid-column: 1 / 2;
+}
+
+.GranadaText.Two{
+    width: 100%;
+    height: auto;
+    grid-column: 3/4;
+    text-align: right;
+}
+
+.GranadaImage.One{
+    grid-column: 2/3;
+}
+
+/* Sección 2 - LA NUEVA GRANADA */
+
+.GranadaText.Three{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    grid-column: 2 / 3;
+}
+
+.GranadaText.Four{
+    width: 100%;
+    height: auto;
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.GranadaImage.Two{
+    grid-column: 1/2;
+    grid-row:1/3;
+}
+.GranadaImage.Three{
+    grid-column: 3/4;
+    grid-row:1/3;
+}
+
+/* Sección 1 - Constitución */
+
+.Info.Constitucion{
+    grid-template-columns: 1fr 550px 1fr;
+}
+
+.ConstitucionText.One{
+    width: 100%;
+    text-align: center;
+    grid-column: 2/3;
+}
+
+.ConstitucionText.One p{    
+    font-size: 20px;
+}
+
+/* Sección 2 - Constitución */
+
+.ConstitucionImage.One{
+    grid-column: 2/4;
+}
+
+.ConstitucionImage img{
+    width: 90%;
+}
+
+/* Sección 3 - Constitución */
+
+.ConstitucionText.Three{
+    grid-column: 3/4;
+    text-align: right;
+}
+
+.ConstitucionImage.Two{
+    grid-column: 1/3;
+}
+
+/* Sección 4 - Constitución */
+
+.ConstitucionText.Four{
+    grid-column: 1/2;
+}
+
+.ConstitucionImage.Three{
+    grid-column: 2/4;
+}
+
+/* Sección 5 - Constitución */
+
+.ConstitucionText.Five{
+    grid-column: 1/4;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.ConstitucionImage.Four{
+    grid-column: 1/4;
+}
+
+/* Sección 1 - Disolución */
+
+.Info.Disolucion{
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px 40px;
+}
+
+.DisolucionText.One{
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.DisolucionText.Two{
+    grid-column: 2/3;
+    text-align: center;
+}
+.DisolucionText.Three{
+    grid-column: 3/4;
+    text-align: center;
+}
+.DisolucionText.Four{
+    grid-column: 4/5;
+    text-align: center;
+}
+.DisolucionText.Five{
+    grid-column: 5/6;
+    text-align: center;
+}
+
+/* Sección 2 - Disolución */
+
+.DisolucionImage.One{
+    grid-column: 1/4;
+}
+
+/* Sección 3 - Disolución */
+
+.DisolucionText.Six{
+    grid-column: 1/4;
+    padding: 0px 60px;
+}
+
+/* Sección 4 - Disolución */
+
+.DisolucionImage.Two{
+    grid-column: 1/4;
+}
+
+.DisolucionImage.Two img{
+    border: none;
+    box-shadow: none;
+    height: max-content;
+    width: 100%;
+}
+
+/* Sección 5 - Disolución */
+
+.DisolucionImage.Three{
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.DisolucionImage.Four{
+    grid-column: 3/4;    
+    grid-row: 2/3;
+}
+
+.DisolucionText.Sevent{
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.DisolucionText.Eight{
+    grid-column: 3/4;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Sección 6 - Disolución */
+ 
+.DisolucionImage.Five{
+    grid-column: 1/4;
+}
+
+.DisolucionImage.Five img{
+    border: none;
+    box-shadow: none;
+    height: max-content;
+    width: 100%;
+}
+
+/* Sección 1 - Supremos */
+
+.SupremosImage.One{
+    grid-column: 1/4;
+    padding: 0px 50px;
+}
+
+.SupremosImage h5{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: #000;
+}
+
+.SupremosImage img{
+    height: 300px;
+    width: max-content;
+}
+
+/* Sección 2 - Supremos */
+
+.Supremos1{
+    grid-template-columns: 1fr 550px 1fr;
+    text-align: center;
+}
+
+.SupremosText.One{
+    grid-column: 2/3;
+}
+
+/* Sección 3 - Supremos */
+
+.Supremos2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.SupremosImage.Two{
+    grid-column: 1/2;
+}
+
+.SupremosImage.Three{
+    grid-column: 2/3;
+}
+
+/* Sección 1 - Partidos */
+
+.Info.Partidos{
+    align-items: center;
+}
+
+.PartidosImage.One{
+    grid-column: 1 2;
+}
+
+.PartidosText.One{
+    grid-column: 2 3;    
+    text-align: center;
+}
+
+.PartidosImage.Two{
+    grid-column: 3 4;    
+}
+
+/* Sección 2 - Partidos */
+
+
+.PartidosImage.Three{
+    grid-column: 1/4;
+}
+
+.PartidosImage.Three img{
+    border: none;
+    box-shadow: none;
+}
+
+/* Sección 3 - Partidos */
+
+.Partidos1{
+    grid-template-columns: 1fr 550px 1fr;
+    text-align: center;
+}
+
+.PartidosText.Two{
+    grid-column: 2/3;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.PartidosImage.Four{
+    grid-column: 2/ 3;
+    grid-row: 2/3;
+}
+
+.PartidosImage.Four img{
+    border: none;
+    box-shadow: none;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+    justify-content: right;
+}
+
+.btn_page{
+    background: #5ae2c7;
+}
+
+.btn.btn_page::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #48cbe2;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 1;
+    transition: .5s ease-in-out all;
+}
+
+.btn.btn_page:hover::after{
+    top: 0;
+}

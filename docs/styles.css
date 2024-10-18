@@ -148,6 +148,8 @@ header{
 }
 
 
+/* Header */
+
 .HeaderContent{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;    
