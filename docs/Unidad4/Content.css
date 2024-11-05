@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #BEFFF2;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding: 10px 0px;
+}
+
+.Tittle{
+    font-size: 30px;
+    background-color: #a9e0d5;
+    width: max-content;
+    height: auto;
+    margin: auto;
+    padding: 0px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn{
+    display: inline-flex;
+    width: max-content;
+    height: max-content;
+    margin: 30px 0px;
+    background: #bce5dd;
+    border: 1px solid black;
+    font-size: 20px;
+    box-shadow: 0px 6px 7px #353535b2;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3 ease all;
+    position: relative;        
+    overflow: hidden;
+}
+
+.btn a{
+    position: relative;
+    z-index: 2;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #000;
+    background: none;
+}
+
+/* Header */
+
+.HeaderContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.ButtonContainer{
+    grid-column: 1 / 2;
+    text-align: right;
+    align-content: center;
+}
+
+.btn_back{    
+    margin: 20px;
+}
+
+.btn_back a{
+    padding: 4px 7px;
+}
+
+.btn_back:hover{
+    box-shadow: 0px 3px 8px #000000;
+}
+
+.HeaderContent.Tittle{
+    grid-column: 2 / 4;
+}
+
+/* General */
+
+.ContainerInfo{
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    padding: 0px 40px;
+}
+
+.Info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    padding: 15px 80px;
+    margin: 20px 0;
+}
+
+p{
+    display: flex;
+    font-size: 22px;
+    width: 100%;
+    height: auto;
+    padding: 5px; 
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #424242;
+    box-shadow: 0px 0px 4px #000000;
+    overflow: hidden;
+    margin: auto;   
+}
+
+/* Federalimso - Sección 1 */
+
+.FederalismoText{
+    align-content: center;
+}
+.FederalismoText.One{
+    grid-column: 1/4;
+    text-align: center;
+}
+.FederalismoImage.One{
+    grid-column: 1/4;
+}
+
+/* Federalismo - Sección 2 */
+
+.FederalismoImage.Two{
+    grid-column: 2/4;
+}
+
+/* Federalismo - Sección 3 */
+
+.FederalismoText.Three{
+    grid-column: 3/4;
+    text-align: right;
+}
+
+.FederalismoImage.Three{
+    grid-column: 1/3;
+}
+
+/* Federalismo - Sección 3 */
+
+.FederalismoText.Four{
+    grid-row: 1/3;
+}
+.FederalismoImage.Four{
+    grid-column: 2/4;
+    margin-bottom: 10px;
+}
+
+.FederalismoImage.Five{
+    grid-column: 2/4;
+    margin-top: 10px;
+}
+
+/* Federalismo - Sección 4 */
+
+.FederalismoText.Five{
+    grid-column: 3/4;
+    text-align: right;
+}
+
+.FederalismoImage.Six{
+    grid-column: 1/3;
+}
+
+/* Siglo - Sección 1 */
+
+.SigloImage.One{
+    grid-column: 2/4;
+}
+
+.SigloText.One{
+    align-content: center;
+}
+
+/* Siglo - Sección 2 */
+
+.SigloText.Two{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.SigloImage.Two{
+    grid-column: 1/4;
+}
+
+/* Siglo - Sección 3 */
+
+.SigloImage.Three{
+    grid-column: 2/4;
+}
+
+/* Siglo - Sección 4 */
+
+.SigloText.Four{
+    grid-column: 3/4;
+    text-align: right;
+}
+
+.SigloImage.Four{
+    grid-column: 1/3;
+}
+
+/* Siglo - Sección 5 */
+
+.SigloText.Five{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.SigloImage.Five{
+    grid-column: 1/4;
+}
+
+.SigloText.Six{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.Siglo{
+    grid-template-columns: 1fr max-content max-content 1fr;
+}
+
+/* Despues - Sección 1 */
+
+.DespuesText{
+    align-content: center;
+}
+.DespuesImage.One{
+    grid-column: 1/3;
+}
+
+/* Despues - Sección 2 */
+
+.DespuesText.Two{
+    text-align: right;
+}
+.DespuesImage.Two{
+    grid-column: 2/4;
+}
+
+/* Despues - Sección 3*/
+
+.DespuesText.Three{
+    grid-column: 3/4;
+}
+
+.DespuesImage.Three{
+    grid-column: 1/3;
+}
+
+/* Despues - Sección 4 */
+
+.DespuesText.Four{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.DespuesImage.Four img{
+    border: none;
+    box-shadow: none;
+}
+
+.DespuesImage.Four{
+    grid-column: 1/4;
+}
+
+/* Despues - Sección 5 */
+
+.DespuesImage.Five{
+    grid-column: 1/4;
+}
+
+.DespuesText.Five{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+/* Conflictos - Sección 1 */
+
+.ConflictosText.One{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.ConflictosImage.One{
+    grid-column: 1/4;
+}
+
+/* Conflictos - Sección 2 */
+
+.Conflictos{
+    grid-template-columns: 1fr minmax(200px, 900px) 1fr;
+}
+
+.ConflictosText.Two{
+    grid-column: 2/3;
+    text-align: center;
+    padding: 20px 15px ;
+    transition: .4s;
+}
+
+.ConflictosText.Three{
+    grid-column: 2/3;
+    text-align: center;    
+    padding: 20px 15px ;
+    transition: .4s;
+}
+
+.ConflictosText.Two:hover{
+    border: 1px solid #000;
+    box-shadow: 0px 5px 10px #000000;
+}
+
+.ConflictosText.Three:hover{
+    border: 1px solid #000;
+    box-shadow: 0px 5px 10px #000000;
+}
+
+.ConflictosImage.Two{
+    grid-column: 1/4;
+}
+
+/* Conflictos - Sección 3  */
+
+.ConflictosText.Four{
+    grid-column: 1/4;
+    text-align: center;
+    transition: .4s;
+    position: relative;
+}
+
+.ConflictosText.Four:hover{
+    border: 1px solid #ff0000;
+    box-shadow: 0px 5px 10px #fd5353;
+    background: #fc888883;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0px 80px;
+    justify-content: right;
+}
+
+.btn_page{
+    background: #5ae2c7;
+}
+
+.btn.btn_page::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #48cbe2;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 1;
+    transition: .5s ease-in-out all;
+}
+
+.btn.btn_page:hover::after{
+    top: 0;
+}

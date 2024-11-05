@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #BEFFF2;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding: 10px 0px;
+}
+
+.Tittle{
+    font-size: 30px;
+    background-color: #a9e0d5;
+    width: max-content;
+    height: auto;
+    margin: auto;
+    padding: 0px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn{
+    display: inline-flex;
+    width: max-content;
+    height: max-content;
+    margin: 30px 0px;
+    background: #bce5dd;
+    border: 1px solid black;
+    font-size: 20px;
+    box-shadow: 0px 6px 7px #353535b2;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3 ease all;
+    position: relative;        
+    overflow: hidden;
+}
+
+.btn a{
+    position: relative;
+    z-index: 2;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #000;
+    background: none;
+}
+
+.btn::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #5ae2c7;
+    position: absolute;
+    top: 0px;
+    left: -130px;
+    z-index: 1;
+    transition: .5s ease-in-out all;
+}
+
+.btn:hover::after{
+    left: 0;
+}
+
+/* Contenedores */
+
+.Container{
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-auto-rows: max-content;
+    width: 100%;
+    height: auto;
+}
+
+.quiz-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    margin: 0px 40px;
+    align-items: center;
+    justify-content: baseline;
+}
+
+/* Preguntas */
+
+.question{
+    display: inline-flex;
+    font-size: 18px;
+    background-color: transparent;
+    color: #000;
+    padding: 5px;
+    text-align:left;
+    width: 300px;
+}
+
+.optionsContainer{
+    display: inline-flex;
+    align-items: center;
+}
+
+.options{
+    margin: auto;    
+    height: 100px;
+}
+/* Respuestas */
+
+.ContainerAnswer{
+    margin: 20px;
+}
+
+input[type="radio"]
+{
+    appearance: none;
+}
+
+input[type="radio"] + label::before
+{
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: transparent;
+    content:"";
+    display: inline-flex;
+    height: 25px;
+    width: 25px;
+    color: #000;
+    justify-content: center;
+    margin: 5px;
+}
+
+input[type="radio"]:checked + label::before{
+    background-color: #5ae2c7;
+}
+
+label{
+    display: inline-flex;
+    align-items: center;
+}
+
+.ContainerResultado{
+    text-align: center;
+    width: 100%;
+}
+
+.resultado {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+    justify-content: right;
+}
+
+.btn_page{
+    background: #5ae2c7;
+}
+
+.btn.btn_page::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #48cbe2;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 1;
+    transition: .5s ease-in-out all;
+}
+
+.btn.btn_page:hover::after{
+    top: 0;
+}
+
