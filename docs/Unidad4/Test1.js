@@ -1,19 +1,19 @@
 const questions = [
     {
-        question: "La Independencia de Colombia fue el proceso que llevó al final el período de dominio del Imperio español en el actual territorio del país.",
+        question: "El territorio estaba dividido y no había unidad política, social ni económica, generando guerras, desempleo y miseria",
         answer: true
     },
     {
-        question: "En 1816 las tropas de Juan VII ganaron de nuevo el control del país, con lo cual instala el llamado régimen del terror liderado por Pablo Morillo5​.",
+        question: "Rafel Nuñez encabezó el movimiento llamado La Regeneración y propuso crear un estado único con leyes aceptadas por todos",
         answer: true
     },
     {
-        question: "El territorio ocupado por el Virreinato de Nueva Granada se convirtió en la República de Venezuela.",
+        question: "En 1880 Rafel Nuñez perdió la elección presidencial y las normas cambiaron",
         answer: false
         
     },
     {
-        question: "Tras la disolución de esta última en 1830, el antiguo virreinato asumió el mismo nombre de Colombia.",
+        question: "La Constitución de 1886 concedió mucho poder al presidente y su periodo se extendía a 6 años",
         answer: true
     }
 ];

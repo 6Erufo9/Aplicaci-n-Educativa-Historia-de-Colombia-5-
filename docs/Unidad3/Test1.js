@@ -1,19 +1,19 @@
 const questions = [
     {
-        question: "La Independencia de Colombia fue el proceso que llevó al final el período de dominio del Imperio español en el actual territorio del país.",
+        question: "Nuestro país recibió el nombre de Nueva Granada treinta años después de la Independecia",
         answer: true
     },
     {
-        question: "En 1816 las tropas de Juan VII ganaron de nuevo el control del país, con lo cual instala el llamado régimen del terror liderado por Pablo Morillo5​.",
-        answer: true
+        question: "La situación social y económica en la Nueva Granada había mejorado para todas las clases sociales",
+        answer: false
     },
     {
-        question: "El territorio ocupado por el Virreinato de Nueva Granada se convirtió en la República de Venezuela.",
+        question: "En el Siglo XIX tiempo de la Nueva Granada, los indígenas y campesinos no pagaban impuestos o diezmos",
         answer: false
         
     },
     {
-        question: "Tras la disolución de esta última en 1830, el antiguo virreinato asumió el mismo nombre de Colombia.",
+        question: "Hacia 1851 el congreso de la República proclamó la libertad de los esclavos de la Nueva Granada",
         answer: true
     }
 ];
